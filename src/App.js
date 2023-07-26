@@ -1,11 +1,13 @@
 import "./App.css";
 import banner from "./image-product-desktop.jpg";
+import banner2 from "./image-product-mobile.jpg";
 import icon from "./icon-cart.svg";
 
 function App() {
   return (
     <div className="card">
       <img className="image-box" src={banner} alt="banner" />
+      <img className="image-box2" src={banner2} alt="banner" />
 
       <div className="content">
         <p className="category">PERFUME</p>
