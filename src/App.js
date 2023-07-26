@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import banner from "./image-product-desktop.jpg";
+import icon from "./icon-cart.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="card">
+      <img className="image-box" src={banner} alt="banner" />
+
+      <div className="content">
+        <p className="category">PERFUME</p>
+        <h2>Gabriele Essence Eau De Perfum</h2>
+        <p className="desc">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.{" "}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="price-container">
+          <p className="price">$149.99</p>
+          <span className="main-price">$169.99</span>
+        </div>
+        <button className="btn">
+          <img src={icon} alt="icon" />
+          <span>Add to Cart</span>
+        </button>
+      </div>
     </div>
   );
 }
