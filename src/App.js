@@ -5,7 +5,7 @@ import icon from "./icon-cart.svg";
 
 function App() {
   return (
-    <div className="card">
+    <main className="card">
       <img className="image-box" src={banner} alt="banner" />
       <img className="image-box2" src={banner2} alt="banner" />
 
@@ -25,7 +25,7 @@ function App() {
           <span>Add to Cart</span>
         </button>
       </div>
-    </div>
+    </main>
   );
 }
 
